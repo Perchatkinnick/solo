@@ -4,7 +4,6 @@ body {
     height: 100%;
     position: fixed;
     display: flex;
-    align-items: center;
     align-content: center;
     justify-content: center;
     font-family: Montserrat;
@@ -38,7 +37,6 @@ body {
 
 .sidebar__header__buffer {
     grid-column: sidebar__header__buffer;
-    background: green;
     width: 249px;
     height: 100%;
 }
@@ -51,10 +49,42 @@ body {
 }
 
 .sidebar__header__menu {
+    display: grid;
     grid-column: sidebar__header__menu;
-    background: white;
+    grid-template-columns: [sidebar__header__menu__icon] 1fr [sidebar__header__menu__title] 2fr;
     width: 180px;
     height: 100%;
+}
+
+.sidebar__header__menu__icon {
+    grid-column: sidebar__header__menu__icon;
+    height: 100%;
+    width: 70px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sidebar__header__menu__icon__lines {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    height: 8px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.sidebar__header__menu__title {
+    grid-column: sidebar__header__menu__title;
+    height: 100%;
+    width: 110px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 11px;
+    color: #FAF9FA;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
 }
 
 .sidebar__content {
