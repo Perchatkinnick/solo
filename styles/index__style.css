@@ -49,8 +49,24 @@ body {
 
 .gallery__slide {
     position: absolute;
-    width: 631px;
+    width: 721px;
     height: 930px;
+    
+}
+
+.gallery__slide__mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    opacity: 0;
+}
+
+.gallery__slide:not([class="gallery__slide__active"]) {
+}
+
+.gallery__slide__active {
+
 }
 
 .gallery__slide__title {
