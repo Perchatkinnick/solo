@@ -27,6 +27,74 @@ body {
     width: 660px;
 }
 
+.sidebar__button {
+    position: absolute;
+    width: 220px;
+    height: 150px;
+    left: 420px;
+    top: 694px;
+}
+
+.sidebar__button__title {
+    position: absolute;
+    width: 155px;
+    height: 22px;
+    left: 65px;
+    top: 64px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+    .sidebar__button__title span {
+        color: #BC1118;
+    }
+
+.sidebar__content {
+    display: grid;
+    grid-row: sidebar__content;
+    grid-template-rows: [sidebar__content__title] 1fr [sidebar__content__text] 2fr [sidebar__content__scroll] 3fr [sidebar__content__buffer] 4fr;
+    width: 100%;
+    height: 774px;
+}
+
+.sidebar__content__scroll {
+    grid-row: sidebar__content__scroll;
+    width: 545px;
+    height: 173px;
+    margin-left: 105px;
+}
+
+.sidebar__content__text {
+    grid-row: sidebar__content__text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FAF9FA;
+    height: 281px;
+    width: 315px;
+    margin-left: 105px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sidebar__content__title {
+    grid-row: sidebar__content__title;
+    height: 269px;
+    width: 525px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF;
+    margin-left: 105px;
+    display: flex;
+    align-items: flex-end;
+}
+
 .sidebar__header {
     display: grid;
     grid-row: sidebar__header;
@@ -77,21 +145,12 @@ body {
     height: 100%;
     width: 110px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 11px;
     color: #FAF9FA;
     display: flex;
     align-items: flex-end;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar__content {
-    grid-row: sidebar__content;
-    background: pink;
-    width: 100%;
-    height: 774px;
 }
 
 .gallery {
