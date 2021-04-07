@@ -7,7 +7,7 @@ body {
     align-content: center;
     justify-content: center;
     font-family: Montserrat;
-    overflow:auto;
+    overflow:hidden;
 }
 
 .container {
@@ -18,6 +18,69 @@ body {
     width: 100%;
     height: 930px;
     background: #111111;
+    overflow: hidden
+}
+
+.gallery {
+    grid-column: gallery;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery__back {
+    position: absolute;
+    top: 390px;
+    left: -60px;
+    width: 90px;
+    height: 150px;
+    z-index:50;
+    cursor: pointer;
+}
+
+.gallery__forward {
+    position: absolute;
+    top: 390px;
+    right: -1px;
+    width: 120px;
+    height: 150px;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.gallery__slide {
+    position: absolute;
+    width: 631px;
+    height: 930px;
+}
+
+.gallery__slide__title {
+    position: absolute;
+    width: 211px;
+    height: 55px;
+    top: 828px;
+    left: 75px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.gallery__slide__title__link {
+    width: 115px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.gallery__slide__title__link__arrow {
+    float: right;
+    width: 14.95px;
+    height: 36px;
+    background: url('../media/svg/arrow.svg') no-repeat center ;
 }
 
 .sidebar {
@@ -151,9 +214,4 @@ body {
     color: #FAF9FA;
     display: flex;
     align-items: flex-end;
-}
-
-.gallery {
-    grid-column: gallery;
-    background: olive;
 }
