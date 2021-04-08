@@ -210,6 +210,10 @@ body {
         cursor: url('../media/images/cursor.png'), pointer;
     }
 
+        .sidebar__content__menu__socials__wahtsapp div:hover {
+            background: url('../media/images/whatsapp__active.png');
+        }
+
 .sidebar__content__menu__socials__insta {
     position: relative;
     height: 100%;
@@ -225,6 +229,10 @@ body {
         margin-bottom: 1px;
         cursor: url('../media/images/cursor.png'), pointer;
     }
+
+        .sidebar__content__menu__socials__insta div:hover {
+            background: url('../media/images/insta__active.png');
+        }
 
 .sidebar__close {
     position: absolute;

@@ -80,6 +80,10 @@ function onBackClickHandler() {
         }, 5);
 
         loadMask();
+
+        let scrollBar = document.querySelector('#sidebar__content__scroll__progress');
+        let x2 = scrollBar.getAttribute('x2');
+        scrollBar.setAttribute('x2', String(+x2 - 79));
     }
 }
 
@@ -109,7 +113,13 @@ function onForwardClickHandler() {
         }, 5);
 
         loadMask();
+
+        let scrollBar = document.querySelector('#sidebar__content__scroll__progress');
+        let x2 = scrollBar.getAttribute('x2');
+        scrollBar.setAttribute('x2', String(+x2 + 79));
     }
+
+
 }
 
 function drawForward(timePassed, elem, left) {
