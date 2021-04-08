@@ -1,13 +1,16 @@
+html{
+
+}
+
 body {
     background: #E5E5E5;
     width: 100%;
     height: 100%;
-    position: fixed;
+
     display: flex;
     align-content: center;
     justify-content: center;
     font-family: Montserrat;
-    overflow:hidden;
 }
 
 .container {
@@ -16,9 +19,7 @@ body {
     position: relative;
     max-width: 1920px;
     width: 100%;
-    height: 930px;
     background: #111111;
-    overflow: hidden
 }
 
 .gallery {
@@ -33,8 +34,8 @@ body {
     left: -60px;
     width: 90px;
     height: 150px;
-    z-index:50;
-    cursor: pointer;
+    z-index: 50;
+    cursor: url('../media/images/cursor.png'), pointer;
 }
 
 .gallery__forward {
@@ -44,14 +45,13 @@ body {
     width: 120px;
     height: 150px;
     z-index: 50;
-    cursor: pointer;
+    cursor: url('../media/images/cursor.png'), pointer;
 }
 
 .gallery__slide {
     position: absolute;
     width: 721px;
     height: 930px;
-    
 }
 
 .gallery__slide__mask {
@@ -68,7 +68,7 @@ body {
     height: 55px;
     top: 828px;
     left: 75px;
-    cursor: pointer;
+    cursor: url('../media/images/cursor.png'), pointer;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -98,6 +98,146 @@ body {
     height: 100%;
     width: 660px;
 }
+
+#sidebar__menu {
+    position: absolute;
+    top: 157px;
+    width: 660px;
+    height: 774px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: [sidebar__content__copyright] 1fr [sidebar__content__menu] 2fr;
+}
+
+.sidebar__content__copyright {
+    position: relative;
+    height: 100%;
+    width: 43px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+    .sidebar__content__copyright div {
+        position: absolute;
+        left: -366px;
+        top: 365px;
+        height: 43px;
+        width: 774px;
+        margin-top: -49px;
+        transform: rotate(-90deg);
+        display: flex;
+        align-items: flex-end;
+    }
+
+.sidebar__content__menu {
+    display: grid;
+    grid-template-rows: 
+        [sidebar__content__menu__about] 1fr 
+        [sidebar__content__menu__services] 2fr 
+        [sidebar__content__menu__works] 3fr 
+        [sidebar__content__menu__solutions] 4fr
+        [sidebar__content__menu__contacts] 5fr
+        [sidebar__content__menu__socials] 6fr
+        [sidebar__content__menu__bufer] 7fr;
+    width: 617px;
+    height: 774px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
+
+    .sidebar__content__menu div {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+        .sidebar__content__menu div span {
+            cursor: url('../media/images/cursor.png'), pointer;
+        }
+
+            .sidebar__content__menu div span:hover {
+                color: #BC1118;
+            }
+
+.sidebar__content__menu__about {
+    height: 175px;
+    padding-left: 212px;
+}
+
+.sidebar__content__menu__services {
+    height: 79px;
+    padding-left: 232px;
+}
+
+.sidebar__content__menu__works {
+    height: 79px;
+    padding-left: 175px;
+}
+
+.sidebar__content__menu__solutions {
+    height: 79px;
+    padding-left: 119px;
+}
+
+.sidebar__content__menu__contacts {
+    height: 79px;
+    padding-left: 206px;
+}
+
+.sidebar__content__menu__socials {
+    display: grid;
+    grid-template-columns: [sidebar__content__menu__socials__wahtsapp] 1fr [sidebar__content__menu__socials__insta] 2fr;
+    height: 233px;
+}
+
+.sidebar__content__menu__socials__wahtsapp {
+    height: 100%;
+    width: 270px;
+}
+
+    .sidebar__content__menu__socials__wahtsapp div {
+        position: absolute;
+        left: 293px;
+        width: 40px;
+        height: 40px;
+        background: url('../media/images/whatsapp.png');
+        margin-bottom: 1px;
+        cursor: url('../media/images/cursor.png'), pointer;
+    }
+
+.sidebar__content__menu__socials__insta {
+    position: relative;
+    height: 100%;
+    width: 347px;
+}
+
+    .sidebar__content__menu__socials__insta div {
+        position: absolute;
+        left: -9px;
+        width: 40px;
+        height: 40px;
+        background: url('../media/images/insta.png');
+        margin-bottom: 1px;
+        cursor: url('../media/images/cursor.png'), pointer;
+    }
+
+.sidebar__close {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    left: 559px;
+    top: 106px;
+    cursor: url('../media/images/cursor.png'), pointer;
+}
+
+    .sidebar__close:hover svg {
+        stroke: #BC1118;
+    }
 
 .sidebar__button {
     position: absolute;
@@ -130,6 +270,7 @@ body {
     grid-template-rows: [sidebar__content__title] 1fr [sidebar__content__text] 2fr [sidebar__content__scroll] 3fr [sidebar__content__buffer] 4fr;
     width: 100%;
     height: 774px;
+    color: #FFFFFF;
 }
 
 .sidebar__content__scroll {
@@ -145,7 +286,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #FAF9FA;
     height: 281px;
     width: 315px;
     margin-left: 105px;
@@ -191,29 +331,46 @@ body {
 .sidebar__header__menu {
     display: grid;
     grid-column: sidebar__header__menu;
-    grid-template-columns: [sidebar__header__menu__icon] 1fr [sidebar__header__menu__title] 2fr;
+    grid-template-rows: [sidebar__header__menu__bufer] 1fr [sidebar__header__menu__button] 2fr;
     width: 180px;
-    height: 100%;
+    height: 157px;
 }
 
-.sidebar__header__menu__icon {
-    grid-column: sidebar__header__menu__icon;
-    height: 100%;
-    width: 70px;
-    display: flex;
-    align-items: flex-end;
+.sidebar__header__menu__bufer {
+    grid-row: sidebar__header__menu__bufer;
+    width: 100%;
+    height: 140px;
 }
 
-.sidebar__header__menu__icon__lines {
+.sidebar__header__menu__button {
+    display: grid;
+    grid-row: sidebar__header__menu__button;
+    grid-template-columns: [sidebar__header__menu__button__lines] 1fr [sidebar__header__menu__button__title];
+    width: 100%;
+    height: 17px;
+    cursor: url('../media/images/cursor.png'), pointer;
+}
+
+    .sidebar__header__menu__button:hover .sidebar__header__menu__button__lines {
+        border-top: 1px solid #BC1118;
+        border-bottom: 1px solid #BC1118;
+    }
+
+    .sidebar__header__menu__button:hover .sidebar__header__menu__button__title {
+        color: #BC1118;
+    }
+
+.sidebar__header__menu__button__lines {
+    grid-column: sidebar__header__menu__button__lines;
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
     height: 8px;
     width: 50px;
-    cursor: pointer;
+    margin-top: 7px;
 }
 
-.sidebar__header__menu__title {
-    grid-column: sidebar__header__menu__title;
+.sidebar__header__menu__button__title {
+    grid-column: sidebar__header__menu__button__title;
     height: 100%;
     width: 110px;
     font-style: normal;

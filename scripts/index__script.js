@@ -15,7 +15,47 @@ function onLoad() {
     forward.addEventListener('click', onForwardClickHandler);
 
     let back = document.querySelector('.gallery__back');
-    back.addEventListener('click', onBackClickHandler)
+    back.addEventListener('click', onBackClickHandler);
+
+    let menuButton = document.querySelector('.sidebar__header__menu__button');
+    menuButton.addEventListener('click', onMenuClickHandler);
+
+    let sidebarClose = document.querySelector('.sidebar__close');
+    sidebarClose.addEventListener('click', onSidebarCloseClickHandler);
+}
+
+function onSidebarCloseClickHandler() {
+    let sidebarClose = document.querySelector('.sidebar__close');
+    sidebarClose.style.visibility = 'hidden';
+
+    let menuButton = document.querySelector('.sidebar__header__menu__button');
+    menuButton.style.visibility = 'visible';
+
+    let content = document.querySelector('#sidebar__content');
+    content.style.visibility = 'visible';
+
+    let menu = document.querySelector('#sidebar__menu');
+    menu.style.visibility = 'hidden';
+
+    let sidebarButton = document.querySelector('.sidebar__button');
+    sidebarButton.style.visibility = 'visible';
+}
+
+function onMenuClickHandler(e) {
+    let menuButton = document.querySelector('.sidebar__header__menu__button');
+    menuButton.style.visibility = 'hidden';
+
+    let content = document.querySelector('#sidebar__content');
+    content.style.visibility = 'hidden';
+
+    let menu = document.querySelector('#sidebar__menu');
+    menu.style.visibility = 'visible';
+
+    let sidebarButton = document.querySelector('.sidebar__button');
+    sidebarButton.style.visibility = 'hidden';
+
+    let sidebarClose = document.querySelector('.sidebar__close');
+    sidebarClose.style.visibility = 'visible';
 }
 
 function onBackClickHandler() {

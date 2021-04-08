@@ -25,17 +25,20 @@
                 <div class="sidebar__header__logo"></div>
                 <div class="sidebar__header__buffer"></div>
                 <div class="sidebar__header__menu">
-                    <div class="sidebar__header__menu__icon">
-                        <div class="sidebar__header__menu__icon__lines"></div>
+                    <div class="sidebar__header__menu__bufer"></div>
+                    <div class="sidebar__header__menu__button">
+                        <div class="sidebar__header__menu__button__lines"></div>
+                        <div class="sidebar__header__menu__button__title">Меню­</div>
                     </div>
-                    <div class="sidebar__header__menu__title">Меню­</div>
                 </div>
             </div>
-            <div class="sidebar__content">
+            <div id="sidebar__content" class="sidebar__content" style="visibility: visible">
                 <div class="sidebar__content__title">Архитектура загородных домов</div>
-                <div class="sidebar__content__text">Добро пожаловать! Я Саша Соло, дизайнер-архитектор. Занимаюсь проектированием загородной архитектуры и интерьеров жилых пространств, основанных на красоте, качестве и эргономике. 
-                    <br><br>Мне интересно работать с разными стилями, в любом уголке мира. 
-                    <br>Нет преград ни в форме общения, ни в рамках полномочий. Давайте создадим нечто интересное...</div>
+                <div class="sidebar__content__text">
+                    Добро пожаловать! Я Саша Соло, дизайнер-архитектор. Занимаюсь проектированием загородной архитектуры и интерьеров жилых пространств, основанных на красоте, качестве и эргономике.
+                    <br><br>Мне интересно работать с разными стилями, в любом уголке мира.
+                    <br>Нет преград ни в форме общения, ни в рамках полномочий. Давайте создадим нечто интересное...
+                </div>
                 <div class="sidebar__content__scroll">
                     <svg height="174" width="545" viewBox="0 0 545 174">
                         <line x1="0" y1="172" x2="315" y2="172" stroke="#FFFFFF" stroke-width="2" />
@@ -44,31 +47,53 @@
                 </div>
                 <div class="sidebar__content__buffer"></div>
             </div>
+            <div id="sidebar__menu" style="visibility: hidden">
+                <div class="sidebar__content__copyright"><div>Разработка сайта: студия “ЯР”</div></div>
+                <div class="sidebar__content__menu">
+                    <div class="sidebar__content__menu__about"><span>Обо мне</span></div>
+                    <div class="sidebar__content__menu__services"><span>Услуги</span></div>
+                    <div class="sidebar__content__menu__works"><span>Мои работы</span></div>
+                    <div class="sidebar__content__menu__solutions"><span>Готовые решения</span></div>
+                    <div class="sidebar__content__menu__contacts"><span>Контакты</span></div>
+                    <div class="sidebar__content__menu__socials">
+                        <div class="sidebar__content__menu__socials__wahtsapp"><div></div></div>
+                        <div class="sidebar__content__menu__socials__insta"><div></div></div>
+                    </div>
+                    <div class="sidebar__content__menu__bufer"></div>
+                </div>
+            </div>
+            <div class="sidebar__close" style="visibility: hidden">
+                <svg stroke="#FFFFFF" stroke-width="1">
+                    <circle id="sidebar__close" cx="26" cy="26" r="24.5" fill="transparent"></circle>
+                    <line id="line1" x1="16" y1="17" x2="36" y2="35"/>
+                    <line id="line2" x1="36" y1="17" x2="16" y2="35"/>
+                </svg>
+            </div>
             <div class="sidebar__button">
                 <svg height="150" width="220" viewBox="0 0 220 150">
                     <circle id="sidebar__button__circle" cx="75" cy="75" r="74.5" fill="transparent" stroke="#FFFFFF" stroke-width="1"></circle>
                 </svg>
                 <div class="sidebar__button__title">Заказать <span>проект</span></div>
             </div>
-        </div>
-        <div class="gallery">
-            <div class="gallery__back">
-                <svg>
-                    <circle id="gallery__back" cx="75" cy="75" r="74.5" fill="transparent" stroke="#FFFFFF" stroke-width="1"></circle>
-                    <line x1="88" y1="79" x2="163" y2="79" stroke="#FFFFFF" stroke-width="2" />
-                    <line x1="88" y1="79" x2="114" y2="71" stroke="#FFFFFF" stroke-width="2" />
-                </svg>
             </div>
-            <div class="gallery__forward">
-                <svg>
-                    <circle id="gallery__forward" cx="105" cy="75" r="74.5" fill="transparent" stroke="#FFFFFF" stroke-width="1"></circle>
-                    <line x1="92" y1="79" x2="17" y2="79" stroke="#FFFFFF" stroke-width="2" />
-                    <line x1="92" y1="79" x2="66" y2="71" stroke="#FFFFFF" stroke-width="2" />
-                </svg>
+            <div class="gallery">
+                <div class="gallery__back">
+                    <svg>
+                        <circle id="gallery__back" cx="75" cy="75" r="74.5" fill="transparent" stroke="#FFFFFF" stroke-width="1"></circle>
+                        <line x1="88" y1="79" x2="163" y2="79" stroke="#FFFFFF" stroke-width="2" />
+                        <line x1="88" y1="79" x2="114" y2="71" stroke="#FFFFFF" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="gallery__forward">
+                    <svg>
+                        <circle id="gallery__forward" cx="105" cy="75" r="74.5" fill="transparent" stroke="#FFFFFF" stroke-width="1"></circle>
+                        <line x1="92" y1="79" x2="17" y2="79" stroke="#FFFFFF" stroke-width="2" />
+                        <line x1="92" y1="79" x2="66" y2="71" stroke="#FFFFFF" stroke-width="2" />
+                    </svg>
+                </div>
             </div>
-        </div>
 
-    </div>
+        </div>
 </body>
 
 </html>
