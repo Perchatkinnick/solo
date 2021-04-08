@@ -22,6 +22,14 @@ function onLoad() {
 
     let sidebarClose = document.querySelector('.sidebar__close');
     sidebarClose.addEventListener('click', onSidebarCloseClickHandler);
+
+    let sidebarButton = document.querySelector('.sidebar__button');
+    sidebarButton.onmouseover = onSideBarButtonOverHandler;
+}
+
+function onSideBarButtonOverHandler() {
+    let circle = document.querySelector('#sidebar__button__circle');
+
 }
 
 function onSidebarCloseClickHandler() {
@@ -161,7 +169,7 @@ function galleryLoad() {
 
         let link = document.createElement('div');
         link.classList.add('gallery__slide__title__link');
-        link.innerHTML = 'подробнее';
+        link.innerHTML = 'подробнее&nbsp;';
 
         let arrow = document.createElement('div');
         arrow.classList.add('gallery__slide__title__link__arrow');

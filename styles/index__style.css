@@ -38,6 +38,10 @@ body {
     cursor: url('../media/images/cursor.png'), pointer;
 }
 
+    .gallery__back:hover line {
+        stroke: #BC1118;
+    }
+
 .gallery__forward {
     position: absolute;
     top: 390px;
@@ -47,6 +51,10 @@ body {
     z-index: 50;
     cursor: url('../media/images/cursor.png'), pointer;
 }
+
+    .gallery__forward:hover line {
+        stroke: #BC1118;
+    }
 
 .gallery__slide {
     position: absolute;
@@ -76,6 +84,15 @@ body {
     color: #FFFFFF;
 }
 
+    .gallery__slide__title:hover .gallery__slide__title__link {
+        text-decoration: line-through;
+        text-decoration-color: #BC1118;
+    }
+
+        .gallery__slide__title:hover .gallery__slide__title__link .gallery__slide__title__link__arrow {
+            background: url('../media/svg/arrow__active.svg') no-repeat center;
+        }
+
 .gallery__slide__title__link {
     width: 115px;
     font-style: normal;
@@ -88,7 +105,7 @@ body {
 .gallery__slide__title__link__arrow {
     float: right;
     width: 14.95px;
-    height: 36px;
+    height: 35px;
     background: url('../media/svg/arrow.svg') no-repeat center ;
 }
 
@@ -253,20 +270,25 @@ body {
     height: 150px;
     left: 420px;
     top: 694px;
+    cursor: url('../media/images/cursor.png'), pointer;
 }
 
-.sidebar__button__title {
-    position: absolute;
-    width: 155px;
-    height: 22px;
-    left: 65px;
-    top: 64px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
+    .sidebar__button:hover .sidebar__button__title{
+        text-decoration: line-through;
+    }
+
+    .sidebar__button__title {
+        position: absolute;
+        width: 155px;
+        height: 22px;
+        left: 65px;
+        top: 64px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
 
     .sidebar__button__title span {
         color: #BC1118;
