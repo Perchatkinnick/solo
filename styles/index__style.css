@@ -62,13 +62,6 @@ body {
     opacity: 0;
 }
 
-.gallery__slide:not([class="gallery__slide__active"]) {
-}
-
-.gallery__slide__active {
-
-}
-
 .gallery__slide__title {
     position: absolute;
     width: 211px;

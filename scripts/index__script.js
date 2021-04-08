@@ -12,18 +12,68 @@ function onLoad() {
     galleryLoad();
 
     let forward = document.querySelector('.gallery__forward');
-    forward.addEventListener('click', onBackClickHandler);
+    forward.addEventListener('click', onForwardClickHandler);
+
+    let back = document.querySelector('.gallery__back');
+    back.addEventListener('click', onBackClickHandler)
 }
 
 function onBackClickHandler() {
     let activeSlide = document.querySelector('.gallery__slide__active');
-    activeSlide.classList.remove('gallery__slide__active');
+    
     let left = +activeSlide.style.left.split('px')[0];
-    let nextSlide = activeSlide.nextElementSibling;
-    nextSlide.classList.add('gallery__slide__active');
-    nextSlide.style.left = left + 220 + 'px';
+    let previousSlide = activeSlide.previousElementSibling;
+    if (previousSlide.classList.contains('gallery__slide')) {
+        activeSlide.classList.remove('gallery__slide__active');
+        previousSlide.classList.add('gallery__slide__active');
 
-    loadMask();
+        //activeSlide.style.left = left + 460 + 'px';
+        let start = Date.now();
+        let timer = setInterval(function () {
+            let timePassed = Date.now() - start;
+
+            if (timePassed >= 500) {
+                clearInterval(timer);
+                return;
+            }
+            drawBack(timePassed, activeSlide, left);
+        }, 5);
+
+        loadMask();
+    }
+}
+
+function drawBack(timePassed, elem, left) {
+    elem.style.left = left + timePassed / 1.075 + 'px';
+}
+
+function onForwardClickHandler() {
+    let activeSlide = document.querySelector('.gallery__slide__active');
+    
+    let nextSlide = activeSlide.nextElementSibling;
+    let left = +nextSlide.style.left.split('px')[0];
+
+    if (nextSlide.classList.contains('gallery__slide')) {
+        nextSlide.classList.add('gallery__slide__active');
+        activeSlide.classList.remove('gallery__slide__active');
+
+        let start = Date.now();
+        let timer = setInterval(function () {
+            let timePassed = Date.now() - start;
+
+            if (timePassed >= 500) {
+                clearInterval(timer);
+                return;
+            }
+            drawForward(timePassed, nextSlide, left);
+        }, 5);
+
+        loadMask();
+    }
+}
+
+function drawForward(timePassed, elem, left) {
+    elem.style.left = left - timePassed / 1.075 + 'px';
 }
 
 function galleryLoad() {
