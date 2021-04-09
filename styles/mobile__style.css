@@ -17,6 +17,7 @@ body {
     grid-template-rows: [sidebar] 1fr [gallery] 2fr;
     position: relative;
     width: 100%;
+    height:2239px;
     background: #111111;
 }
 
@@ -25,19 +26,29 @@ body {
     overflow: hidden;
     background: red;
     width: 100%;
+    height: 909px;
 }
 
 .sidebar {
     grid-template-rows: [sidebar__header] 1fr [sidebar__content] 2fr;
-    height: 666px;
+    height: 1330px;
     width: 100%;
-
 }
 
 .sidebar__header {
     display: grid;
     grid-template-columns: [sidebar__header__logo] 1fr [sidebar__header__buffer] 2fr [sidebar__header__menu] 3fr;
     width: 100%;
-    height: 80px;
+    height: 160px;
     background: yellow;
+}
+
+.sidebar__content {
+    display: grid;
+    grid-row: sidebar__content;
+    grid-template-rows: [sidebar__content__title] 1fr [sidebar__content__text] 2fr [sidebar__content__scroll] 3fr [sidebar__content__buffer] 4fr;
+    width: 100%;
+    height: 1170px;
+    color: #FFFFFF;
+    background: pink;
 }
