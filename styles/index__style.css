@@ -116,6 +116,123 @@ body {
     width: 660px;
 }
 
+.sidebar__order {
+    position: absolute;
+    top: 157px;
+    width: 660px;
+    height: 598px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-rows: 
+        [sidebar__order__title] 1fr 
+        [sidebar__order__name] 2fr 
+        [sidebar__order__phone] 3fr 
+        [sidebar__order__mail] 4fr 
+        [sidebar__order__message] 5fr 
+        [sidebar__order__agreement] 6fr;
+}
+
+    .sidebar__order div {
+        display: flex;
+        align-items: flex-end;
+        
+    }
+
+        .sidebar__order div input {
+            height: 60px;
+            width: 380px;
+            padding-left: 32px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            line-height: 31px;
+        }
+
+            .sidebar__order div input::-webkit-input-placeholder {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .sidebar__order div input::-moz-placeholder {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .sidebar__order div input:-moz-placeholder {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .sidebar__order div input:-ms-input-placeholder {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+.sidebar__order__name {
+    height: 100px;
+    width: 100%;
+    padding-left: 20%;
+}
+
+.sidebar__order__phone {
+    height: 80px;
+    width: 100%;
+    padding-left: 20%;
+}
+
+.sidebar__order__mail {
+    height: 80px;
+    width: 100%;
+    padding-left: 20%;
+}
+
+.sidebar__order__message {
+    height: 148px;
+    width: 100%;
+    padding-left: 20%;
+}
+
+    .sidebar__order__message textarea {
+        height: 108px;
+        width: 380px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 31px;
+        padding-left: 32px;
+        padding-top: 20px;
+    }
+
+.sidebar__order__agreement {
+    height: 40px;
+    width: 420px;
+    padding-left: 20%;
+}
+
+.sidebar__order__agreement__checkBox {
+    height: 30px;
+    width: 30px;
+    background: #FFFFFF;
+    margin-right: 10px;
+    cursor: url('../media/images/cursor.png'), pointer;
+}
+
+.sidebar__order__agreement__checkBox__checked {
+    background: #FFFFFF url('../media/svg/check.svg') no-repeat center;
+}
+
+.sidebar__order__title {
+    height: 150px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 61px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20%;
+}
+
 #sidebar__menu {
     position: absolute;
     top: 157px;

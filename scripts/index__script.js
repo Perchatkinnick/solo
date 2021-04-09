@@ -24,12 +24,32 @@ function onLoad() {
     sidebarClose.addEventListener('click', onSidebarCloseClickHandler);
 
     let sidebarButton = document.querySelector('.sidebar__button');
-    sidebarButton.onmouseover = onSideBarButtonOverHandler;
+    sidebarButton.addEventListener('click', onSideBarButtoClickHandler);
 }
 
-function onSideBarButtonOverHandler() {
-    let circle = document.querySelector('#sidebar__button__circle');
+function onSideBarButtoClickHandler() {
+    let content = document.querySelector('#sidebar__content');
+    content.style.visibility = 'hidden';
 
+    let sidebarButton = document.querySelector('.sidebar__button');
+    sidebarButton.style.visibility = 'hidden';
+
+    let sidebarOrder = document.querySelector('.sidebar__order');
+    sidebarOrder.style.visibility = 'visible';
+
+    let telInput = document.querySelector('.sidebar__order__phone input');
+    telInput.addEventListener('click', onTelInputClickHandler);
+
+    let checkBox = document.querySelector('.sidebar__order__agreement__checkBox');
+    checkBox.addEventListener('click', onCheckBoxClickHandler);
+}
+
+function onCheckBoxClickHandler(e) {
+    e.target.classList.toggle('sidebar__order__agreement__checkBox__checked');
+}
+
+function onTelInputClickHandler(e) {
+    e.target.value = '+_(___)___-____';
 }
 
 function onSidebarCloseClickHandler() {
@@ -64,6 +84,9 @@ function onMenuClickHandler(e) {
 
     let sidebarClose = document.querySelector('.sidebar__close');
     sidebarClose.style.visibility = 'visible';
+
+    let sidebarOrder = document.querySelector('.sidebar__order');
+    sidebarOrder.style.visibility = 'hidden';
 }
 
 function onBackClickHandler() {
