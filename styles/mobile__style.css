@@ -11,3 +11,33 @@ body {
     font-family: Montserrat;
     cursor: url('../media/images/cursor.png'), pointer;
 }
+
+.container {
+    display: grid;
+    grid-template-rows: [sidebar] 1fr [gallery] 2fr;
+    position: relative;
+    width: 100%;
+    background: #111111;
+}
+
+.gallery {
+    position: relative;
+    overflow: hidden;
+    background: red;
+    width: 100%;
+}
+
+.sidebar {
+    grid-template-rows: [sidebar__header] 1fr [sidebar__content] 2fr;
+    height: 666px;
+    width: 100%;
+
+}
+
+.sidebar__header {
+    display: grid;
+    grid-template-columns: [sidebar__header__logo] 1fr [sidebar__header__buffer] 2fr [sidebar__header__menu] 3fr;
+    width: 100%;
+    height: 80px;
+    background: yellow;
+}

@@ -11,6 +11,23 @@ let data = [
 function onLoad() {
     galleryLoad();
 
+    var width = screen.width;
+
+    if (width > 481) {
+        let style = window.document.createElement('link')
+        style.href = 'styles/index__style.css';
+        style.rel = 'stylesheet';
+        document.querySelector('head').appendChild(style);
+    }
+
+    if (width < 481) {
+        let style = window.document.createElement('link')
+        style.href = 'styles/mobile__style.css';
+        style.rel = 'stylesheet';
+        document.querySelector('head').appendChild(style);
+    }
+    
+
     let forward = document.querySelector('.gallery__forward');
     forward.addEventListener('click', onForwardClickHandler);
 
