@@ -1,5 +1,7 @@
-
-//@ts-check
+import '@styles/main.css';
+import '@styles/color-sheme.css';
+import '@styles/index.css';
+import '@styles/reset.css';
 
 let data = [
     { name: 'Gray Rock House', },
@@ -8,22 +10,7 @@ let data = [
     { name: 'Завидово', },
 ]
 
-function onLoad() {
-    galleryLoad();
-
-    var width = screen.width;
-    let style = window.document.createElement('link');
-    style.rel = 'stylesheet';
-
-    if (width > 481) {
-        style.href = 'styles/index__style.css';
-    }
-
-    if (width < 481) {
-        //style.href = 'styles/mobile__style.css';
-    }
-    document.querySelector('head').appendChild(style);
-
+     galleryLoad();
 
     let forward = document.querySelector('.gallery__forward');
     forward.addEventListener('click', onForwardClickHandler);
@@ -31,25 +18,25 @@ function onLoad() {
     let back = document.querySelector('.gallery__back');
     back.addEventListener('click', onBackClickHandler);
 
-    let menuButton = document.querySelector('.sidebar__header__menu__button');
-    menuButton.addEventListener('click', onMenuClickHandler);
+    let menu = document.querySelector('.menu');
+    menu.addEventListener('click', onMenuClickHandler);
 
-    let sidebarClose = document.querySelector('.sidebar__close');
-    sidebarClose.addEventListener('click', onSidebarCloseClickHandler);
+    let close = document.querySelector('.close');
+    close.addEventListener('click', onSidebarCloseClickHandler);
 
-    let sidebarButton = document.querySelector('.sidebar__button');
-    sidebarButton.addEventListener('click', onSideBarButtoClickHandler);
-}
+    let orderButton = document.querySelector('.order-button');
+    orderButton.addEventListener('click', onSideBarButtoClickHandler);
+
 
 function onSideBarButtoClickHandler() {
-    let content = document.querySelector('#sidebar__content');
+    let content = document.querySelector('.intro');
     content.style.visibility = 'hidden';
 
-    let sidebarButton = document.querySelector('.sidebar__button');
-    sidebarButton.style.visibility = 'hidden';
+    let orderButton = document.querySelector('.order-button');
+    orderButton.style.visibility = 'hidden';
 
-    let sidebarOrder = document.querySelector('.sidebar__order');
-    sidebarOrder.style.visibility = 'visible';
+    let orderForm = document.querySelector('.order-form');
+    orderForm.style.visibility = 'visible';
 
     let telInput = document.querySelector('.sidebar__order__phone input');
     telInput.addEventListener('click', onTelInputClickHandler);
@@ -67,40 +54,40 @@ function onTelInputClickHandler(e) {
 }
 
 function onSidebarCloseClickHandler() {
-    let sidebarClose = document.querySelector('.sidebar__close');
-    sidebarClose.style.visibility = 'hidden';
+    let close = document.querySelector('.close');
+    close.style.visibility = 'hidden';
 
-    let menuButton = document.querySelector('.sidebar__header__menu__button');
+    let menuButton = document.querySelector('.menu');
     menuButton.style.visibility = 'visible';
 
-    let content = document.querySelector('#sidebar__content');
+    let content = document.querySelector('.intro');
     content.style.visibility = 'visible';
 
-    let menu = document.querySelector('#sidebar__menu');
+    let menu = document.querySelector('.gmenu');
     menu.style.visibility = 'hidden';
 
-    let sidebarButton = document.querySelector('.sidebar__button');
-    sidebarButton.style.visibility = 'visible';
+    let orderButton = document.querySelector('.order-button');
+    orderButton.style.visibility = 'visible';
 }
 
 function onMenuClickHandler(e) {
-    let menuButton = document.querySelector('.sidebar__header__menu__button');
-    menuButton.style.visibility = 'hidden';
+    let menu = document.querySelector('.menu');
+    menu.style.visibility = 'hidden';
 
-    let content = document.querySelector('#sidebar__content');
+    let content = document.querySelector('.intro');
     content.style.visibility = 'hidden';
 
-    let menu = document.querySelector('#sidebar__menu');
-    menu.style.visibility = 'visible';
+    let gmenu = document.querySelector('.gmenu');
+    gmenu.style.visibility = 'visible';
 
-    let sidebarButton = document.querySelector('.sidebar__button');
-    sidebarButton.style.visibility = 'hidden';
+    let orderButton = document.querySelector('.order-button');
+    orderButton.style.visibility = 'hidden';
 
-    let sidebarClose = document.querySelector('.sidebar__close');
-    sidebarClose.style.visibility = 'visible';
+    let close = document.querySelector('.close');
+    close.style.visibility = 'visible';
 
-    let sidebarOrder = document.querySelector('.sidebar__order');
-    sidebarOrder.style.visibility = 'hidden';
+    let orderForm = document.querySelector('.order-form');
+    orderForm.style.visibility = 'hidden';
 }
 
 function onBackClickHandler() {

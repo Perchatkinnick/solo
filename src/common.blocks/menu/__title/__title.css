@@ -1,0 +1,16 @@
+.menu__title {
+    grid-column: [title];
+    height: 100%;
+    width: 110px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 11px;
+    color: var(--primary-light);
+    display: flex;
+    align-items: flex-end;
+    }
+    
+    .menu__title:after {
+        content: "Меню­";
+    }

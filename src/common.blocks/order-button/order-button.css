@@ -1,0 +1,28 @@
+.order-button {
+    position: absolute;
+    width: 220px;
+    height: 150px;
+    left: 420px;
+    top: 694px;
+}
+
+    .order-button:hover .sidebar__button__title {
+        text-decoration: line-through;
+    }
+
+.sidebar__button__title {
+    position: absolute;
+    width: 155px;
+    height: 22px;
+    left: 65px;
+    top: 64px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--primary-light);
+}
+
+    .sidebar__button__title span {
+        color: var(--accent);
+    }

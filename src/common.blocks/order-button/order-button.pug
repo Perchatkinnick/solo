@@ -1,0 +1,11 @@
+style
+    include ./order-button.css
+
+.order-button
+    svg(height="100%" width="100%" viewBox="0 0 220 150")
+        circle(id="sidebar__button__circle" cx="75" cy="75" r="74.5" stroke-dasharray="100 0" fill="transparent" stroke="#FFFFFF" stroke-width="1")
+
+        animate(id="sidebar__button__anim" xlink:href="#sidebar__button__circle" attributeName="stroke-dasharray" from="100 0" to="0 100" begin="mouseover" dur="0.5s" fill="freeze")
+        animate(id="sidebar__button__anim" xlink:href="#sidebar__button__circle" attributeName="stroke-dasharray" from="0 100" to="100 0" begin="mouseout" dur="0.5s" fill="freeze")
+    .sidebar__button__title Заказать 
+        span проект

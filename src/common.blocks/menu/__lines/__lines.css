@@ -1,0 +1,7 @@
+.menu__lines {
+    grid-column: [lines];
+    border-top: 1px solid var(--primary-light);
+    border-bottom: 1px solid var(--primary-light);
+    height: 8px;
+    margin-top: 7px;
+}

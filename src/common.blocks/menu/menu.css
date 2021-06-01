@@ -1,0 +1,17 @@
+.menu {
+    display: grid;
+    grid-template-columns: [lines] 1fr [bufer] 0.6fr [title] 2fr;
+    width: 100%;
+    height: 17px;
+    position: absolute;
+    bottom: 0px;
+}
+
+    .menu:hover .menu__lines{
+        border-top: 1px solid var(--accent);
+        border-bottom: 1px solid var(--accent);
+    }
+
+    .menu:hover .menu__title {
+        color: var(--accent);
+    }

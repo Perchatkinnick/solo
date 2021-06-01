@@ -1,0 +1,17 @@
+.close {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    left: 559px;
+    top: 106px;
+    visibility: hidden;
+}
+
+    .close svg{
+        stroke: var(--primary-light);
+        stroke-width: 1;
+    }
+
+    .close:hover svg {
+        stroke: var(--accent);
+    }

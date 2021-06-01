@@ -1,0 +1,120 @@
+.gmenu{
+    visibility: hidden;
+    position: absolute;
+    top: 157px;
+}
+
+.sidebar__content__copyright {
+    position: relative;
+    height: 100%;
+    width: 43px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.sidebar__content__copyright div {
+    position: absolute;
+    left: -366px;
+    top: 365px;
+    height: 43px;
+    width: 774px;
+    margin-top: -49px;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: flex-end;
+}
+
+.sidebar__content__menu {
+    width: 617px;
+    height: 774px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 49px;
+    color: var(--primary-light);
+}
+
+    .sidebar__content__menu div {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+        .sidebar__content__menu div span {
+            
+        }
+
+            .sidebar__content__menu div span:hover {
+                color: var(--accent);;
+            }
+
+.sidebar__content__menu__about {
+    height: 175px;
+    padding-left: 212px;
+}
+
+.sidebar__content__menu__services {
+    height: 79px;
+    padding-left: 232px;
+}
+
+.sidebar__content__menu__works {
+    height: 79px;
+    padding-left: 175px;
+}
+
+.sidebar__content__menu__solutions {
+    height: 79px;
+    padding-left: 119px;
+}
+
+.sidebar__content__menu__contacts {
+    height: 79px;
+    padding-left: 206px;
+}
+
+.sidebar__content__menu__socials {
+    display: grid;
+    grid-template-columns: [sidebar__content__menu__socials__wahtsapp] 1fr [sidebar__content__menu__socials__insta] 2fr;
+    height: 233px;
+}
+
+.sidebar__content__menu__socials__wahtsapp {
+    height: 100%;
+    width: 270px;
+}
+
+    .sidebar__content__menu__socials__wahtsapp div {
+        position: absolute;
+        left: 293px;
+        width: 40px;
+        height: 40px;
+        background: url('../media/images/whatsapp.png');
+        margin-bottom: 1px;
+    }
+
+        .sidebar__content__menu__socials__wahtsapp div:hover {
+            background: url('../media/images/whatsapp__active.png');
+        }
+
+.sidebar__content__menu__socials__insta {
+    position: relative;
+    height: 100%;
+    width: 347px;
+}
+
+    .sidebar__content__menu__socials__insta div {
+        position: absolute;
+        left: -9px;
+        width: 40px;
+        height: 40px;
+        background: url('../media/images/insta.png');
+        margin-bottom: 1px;
+    }
+
+        .sidebar__content__menu__socials__insta div:hover {
+            background: url('../media/images/insta__active.png');
+        }
+    

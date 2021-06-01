@@ -1,0 +1,82 @@
+.gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery__back {
+    position: absolute;
+    top: 390px;
+    left: -60px;
+    width: 90px;
+    height: 150px;
+    z-index: 50;
+}
+
+    .gallery__back:hover line {
+        stroke: #BC1118;
+    }
+
+.gallery__forward {
+    position: absolute;
+    top: 390px;
+    right: -1px;
+    width: 120px;
+    height: 150px;
+    z-index: 50;
+}
+
+    .gallery__forward:hover line {
+        stroke: #BC1118;
+    }
+
+.gallery__slide {
+    position: absolute;
+    width: 721px;
+    height: 930px;
+}
+
+.gallery__slide__mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    opacity: 0;
+}
+
+.gallery__slide__title {
+    position: absolute;
+    width: 211px;
+    height: 55px;
+    top: 828px;
+    left: 75px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+    .gallery__slide__title:hover .gallery__slide__title__link {
+        text-decoration: line-through;
+        text-decoration-color: #BC1118;
+    }
+
+        .gallery__slide__title:hover .gallery__slide__title__link .gallery__slide__title__link__arrow {
+            background: url('../media/svg/arrow__active.svg') no-repeat center;
+        }
+
+.gallery__slide__title__link {
+    width: 115px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.gallery__slide__title__link__arrow {
+    float: right;
+    width: 14.95px;
+    height: 35px;
+    background: url('../media/svg/arrow.svg') no-repeat center;
+}

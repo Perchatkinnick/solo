@@ -1,0 +1,16 @@
+.scroll {
+    width: 63.636364%;
+    height: 173px;
+    padding-left: 105px;
+}
+
+    .scroll svg {
+        height: 174px;
+        width: 100%;
+        viewBox: 0 0 545 174;
+    }
+
+        .scroll svg line{
+            x1: 0;
+            y1: 172;
+        }

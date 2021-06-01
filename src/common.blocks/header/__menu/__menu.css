@@ -1,0 +1,7 @@
+.header__menu{
+    display: grid;
+    width: 28.125%;
+    height: 157px;
+    float: right;
+    position: relative;
+}

@@ -1,0 +1,20 @@
+html {
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Montserrat;
+}
+
+.wrapper {
+	margin: 0 auto;
+	min-height: 100vh; 
+	flex: 1;
+	max-width: 1920px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+	cursor: url('../media/images/cursor.png'), pointer;
+}
