@@ -62,7 +62,7 @@
     }
 
         .gallery__slide__title:hover .gallery__slide__title__link .gallery__slide__title__link__arrow {
-            background: url('../media/svg/arrow__active.svg') no-repeat center;
+            background: url('./media/svg/arrow__active.svg') no-repeat center;
         }
 
 .gallery__slide__title__link {
@@ -78,5 +78,5 @@
     float: right;
     width: 14.95px;
     height: 35px;
-    background: url('../media/svg/arrow.svg') no-repeat center;
+    background: url('./media/svg/arrow.svg') no-repeat center;
 }

@@ -103,7 +103,7 @@
 }
 
 .sidebar__order__agreement__checkBox__checked {
-    background: var(--primary-light) url('../media/svg/check.svg') no-repeat center;
+    background: var(--primary-light) url('./media/svg/check.svg') no-repeat center;
 }
 
 .sidebar__order__title {
